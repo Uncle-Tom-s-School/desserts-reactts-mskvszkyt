@@ -29,8 +29,11 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .dessert-card {
-   h2, h4{
+   h2{
     color: var(--Rose900);
+   };
+   h4{
+    color: lightgray;
    }
 }
 
@@ -83,4 +86,8 @@ font-family: Arial, Helvetica, sans-serif;
   border: 2px solid white;
   color: white;
   cursor: pointer;
+}
+
+.dessert-card:has(.used)>img{
+  border:2px solid var(--Red);
 }
