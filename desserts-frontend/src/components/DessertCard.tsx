@@ -1,5 +1,3 @@
-import React from 'react'
-
 export type DessertCardProp = {
     name: string
     category: string
@@ -14,7 +12,10 @@ export type DessertCardProp = {
 
 const DessertCard = (props: DessertCardProp) => {
   return (
-    <div>{props.name}</div>
+    <div>
+      <h2>{props.name}</h2>
+      <img src={props.image?.desktop} alt="" />
+    </div>
   )
 }
 
